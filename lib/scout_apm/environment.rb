@@ -34,9 +34,9 @@ module ScoutApm
     ]
 
     FRAMEWORK_INTEGRATIONS = [
+      ScoutApm::FrameworkIntegrations::Sinatra.new,
       ScoutApm::FrameworkIntegrations::Rails2.new,
       ScoutApm::FrameworkIntegrations::Rails3Or4.new,
-      ScoutApm::FrameworkIntegrations::Sinatra.new,
       ScoutApm::FrameworkIntegrations::Ruby.new, # Fallback if none match
     ]
 
